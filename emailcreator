@@ -27,10 +27,6 @@ namespace alfanumerico_project
             emails = emails.Replace(" ",".");
             //Results
             //Ex 1
-            Console.WriteLine("Primeiro Nome: " + pri_nome);
-            Console.WriteLine("Sobrenome: " + sobrenome);
-            Console.WriteLine("Substituindo 'a' por 'o':  "+subst_nome);
-            // Ex4
             Console.WriteLine("Seu e-mail: "+email);
             // Exercício 5 
             Console.WriteLine("Seu segundo e-mail:  "+emails);
