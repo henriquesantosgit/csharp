@@ -1,0 +1,57 @@
+using System; 
+
+using System.Collections.Generic; 
+
+using System.Linq; 
+
+using System.Text; 
+
+using System.Threading.Tasks; 
+
+  
+
+namespace ConsoleApp1 
+
+{ 
+
+    internal class Program 
+
+    { 
+
+        static void Main(string[] args) 
+
+        {//inicio 
+
+            double raio,area,diam,per; 
+
+            Console.WriteLine("Digite o valor do raio:"); 
+
+            raio = Convert.ToDouble(Console.ReadLine()); 
+
+            area = 3.14*(raio*raio); 
+
+            Console.WriteLine("A área é:  " + Math.Round(area,2)); 
+
+            diam = 2 * raio; 
+
+            Console.WriteLine("Diâmetro é:  " + diam); 
+
+            per = 2 * 3.14 * raio; 
+
+            Console.WriteLine("Perímetro é:  " + Math.Round(per, 2)); 
+
+  
+
+  
+
+            Console.ReadKey(); 
+
+  
+
+        }//fim 
+
+    } 
+
+} 
+
+ 
