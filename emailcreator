@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace alfanumerico_project
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {//inicio
+            Console.Write("Seu nome: ");
+            string nome_completo = Console.ReadLine();
+            string nome_completo_correto = nome_completo.Trim();
+            int pos = nome_completo_correto.IndexOf(" ");
+            string pri_nome = nome_completo_correto.Substring(0, pos);
+            string sobrenome = nome_completo_correto.Substring(pos);
+            string conteudo_string = nome_completo_correto.Substring(5, 5);
+            string subst_nome = nome_completo_correto.Replace("a", "o");
+            string email = pri_nome + "@fatec.sp.gov.br";
+            email = email.ToLower();
+            int lastsobrenome = nome_completo_correto.LastIndexOf(" ");
+            string ultsobrenome = nome_completo_correto.Substring(lastsobrenome);
+            string emails = pri_nome + ultsobrenome + "@fatec.sp.gov.br";
+            emails = emails.ToLower();
+            emails = emails.Replace(" ",".");
+            //Results
+            //Ex 1
+            Console.WriteLine("Primeiro Nome: " + pri_nome);
+            Console.WriteLine("Sobrenome: " + sobrenome);
+            Console.WriteLine("Substituindo 'a' por 'o':  "+subst_nome);
+            // Ex4
+            Console.WriteLine("Seu e-mail: "+email);
+            // Exercício 5 
+            Console.WriteLine("Seu segundo e-mail:  "+emails);
+            Console.ReadKey();
+        }//fim
+    }
+}
