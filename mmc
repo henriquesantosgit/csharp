@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	//1. Tendo como dados de entrada a altura e o sexo de uma pessoa ("masculino" e "feminino"), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+	//a. para homens: (72.7*h)-58
+	//b. para mulheres: (62.1*h)-44.7.
+		string sexo;
+		double alt,p_ideal;
+		Console.Write("Digite seu sexo:    ");
+		sexo = Console.ReadLine();
+		sexo = sexo.ToLower();
+		Console.Write("Digite sua altura:    ");
+		alt = Convert.ToDouble(Console.ReadLine());
+		//condições
+		if(sexo=="masculino"){
+			p_ideal = (alt*72.7)-58;
+			Console.WriteLine("Peso ideal:  "+ Math.Round(p_ideal,2) + "kg") ;
+		}
+		else{
+			p_ideal = (alt*62.1)-44.7;
+			Console.WriteLine("Peso ideal:  "+ Math.Round(p_ideal,2) +"kg") ;
+		}
+		
+		Console.ReadKey();
+	}
+}
