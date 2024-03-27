@@ -1,0 +1,45 @@
+using System; 
+
+ 
+
+public class Program 
+
+{ 
+
+public static void Main() 
+
+{ 
+
+//4 – A prefeitura esta concedendo empréstimos a seus funcionários seguindo a regra de que a prestação não pode ser maior que 30% do valor do salário.  
+
+//Criar um programa que permita a entrada do salário e da prestação do empréstimo, verificar se a prestação digitada corresponde a regra de empréstimo descrita acima. 
+
+double  salario,prestacao; 
+
+Console.WriteLine("Digite seu salário:"); 
+
+salario = Convert.ToDouble(Console.ReadLine()); 
+
+Console.WriteLine("Digite o valor da prestação desejada:"); 
+
+prestacao = Convert.ToDouble(Console.ReadLine()); 
+
+if(prestacao>0.3*salario){ 
+
+Console.WriteLine("Não está de acordo"); 
+
+} 
+
+else{ 
+
+Console.WriteLine("Está de acordo"); 
+
+} 
+
+ 
+
+Console.ReadKey(); 
+
+} 
+
+} 
